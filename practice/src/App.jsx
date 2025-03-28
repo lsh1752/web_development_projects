@@ -1,12 +1,12 @@
 import './App.css'
-import HEAD from './components/head'
+import HEAD from './components/banner'
 
 function App() {
 
   return (
-    <>
+    <div id='container'>
       <HEAD />
-    </> 
+    </div> 
   )
 }
 
