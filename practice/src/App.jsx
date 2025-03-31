@@ -1,11 +1,11 @@
 import './App.css'
-import HEAD from './components/banner'
+import HEADER from './components/header'
 
 function App() {
 
   return (
     <div id='container'>
-      <HEAD />
+      <HEADER />
     </div> 
   )
 }
