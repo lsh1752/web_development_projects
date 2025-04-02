@@ -5,15 +5,13 @@
   flex-direction: column;
   text-align: center;
   padding: 0;
-  ::after
+  top: 0;
+  color: #000;
 }
 
 #top-head {
   width: 100%;
   height: 59px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 ul {
@@ -44,7 +42,18 @@ span {
 }
 
 #right-button-box {
-  
+  display: flex;
+  align-items: center;
+  width: 210px;
+  padding: 0;
+  margin: 0;
+}
+
+#right-button-box>img {
+  width: 1px;
+  height: 13px;
+  padding: 0;
+  margin: 0;
 }
 
 #head-low-right {
@@ -59,9 +68,8 @@ span {
 }
 
 #top-box {
-  width: 1280px;
+  width: 100%;
   height: 100%;
-  margin: 0 0 0 17px;
   display: flex;
   justify-content: space-between;
   align-items: center;

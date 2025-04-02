@@ -12,7 +12,7 @@ export default function HEADER() {
           <ul>
             <li>
               kor
-              <a href="/en" id="Lang"></a>
+              <a href="/en" id="Lang">eng</a>
             </li>
           </ul>
           <img src="" alt="" id="SImg"/>
