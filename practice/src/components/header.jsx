@@ -9,12 +9,14 @@ export default function HEADER() {
     <div id="container">
       <div id='top-head'>
         <div id='top-box'>
-          <ul>
-            <li>
+          <select>
+            <option>
               kor
+            </option>
+            <option>
               <a href="/en" id="Lang">eng</a>
-            </li>
-          </ul>
+            </option>
+          </select>
           <img src="" alt="" id="SImg"/>
           <img src="" alt="" id="SImg"/>
           <img src="" alt="" id="SImg"/>

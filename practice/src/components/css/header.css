@@ -1,17 +1,22 @@
 #container {
   width: 100%;
   height: 149px;
+  background-color: white;
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 0;
   top: 0;
   color: #000;
+  position: fixed;
+  z-index: 100;
 }
 
 #top-head {
   width: 100%;
   height: 59px;
+  display: flex;
+  justify-content: center;
 }
 
 ul {
@@ -68,12 +73,13 @@ span {
 }
 
 #top-box {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-width: 1400px;
+  background-color: aqua;
 }
 
 #low-box{
@@ -115,4 +121,15 @@ span {
 #button-box>span {
   background-color: black;
   
+}
+
+select {
+  margin-left: 10px;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+}
+
+select>option {
+  outline: 0 none;
 }

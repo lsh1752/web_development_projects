@@ -1,12 +1,11 @@
 import "./css/home.css"
-import bar from '../assets/tm_bar.gif'
 
 export default function home() {
 
   return(
     <div id="home-container">
       <div id="imgDiv">
-        <img src={bar} id="bar"/>
+        <span></span>
         <h3>
           어쩌면 삶은<br />
           인생이라는 종이 위에<br />

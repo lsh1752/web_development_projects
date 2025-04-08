@@ -1,25 +1,34 @@
 #imgDiv {
-  background-image: url("../../assets/monami_main.jpg");
-  width: 100%;
-  height: 650px;
+  width: 60%;
+  height: 60%;
   color: #fff;
   font-family: "Noto Sans KR", "돋움", dotum, sans-serif;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   justify-content: center;
+  padding-top: 40px;
 }
 
 #imgDiv>h3 {
-  display: flex;
-  align-items: start;
-  font-size: 40px;
-  width: 1200px;
-  height: 500px;
+  padding: 0;
+  margin: 0;
+  font-weight: 1;
   font-size: 50px;
 }
 
-#bar {
-  width: 10px;
+#imgDiv>p {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+#imgDiv>span {
+  border: none;
+  background-color: white;
+  width: 83px;
   height: 1px;
   display: flex;
   flex-direction: column;
@@ -27,10 +36,9 @@
 
 #home-container {
   background-image: url("../../assets/monami_main.jpg");
-}
-
-#home-container>bar {
+  width: 100%;
+  height: 650px;
   display: flex;
-  align-items: start;
-  justify-self: start;
+  align-items: center;
+  justify-content: center;
 }
