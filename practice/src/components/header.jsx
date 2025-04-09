@@ -34,15 +34,16 @@ export default function HEADER() {
         <div id='low-box'>
           <img src={Logo} alt="LOGO" height="88px"/>
           <ul id='ul-box'>
-            <p>모나미소개</p>
-            <p id='head-low-right'>모나미제품</p>
-            <strong>NEWS & VIDEO</strong>
-            <p>모나미 미술대회</p>
-            <p>고객지원</p>
-            <p>기업 구매 / 개발</p>
+            <a href=""><p>모나미소개</p></a>
+            <a href=""><p id='head-low-right'>모나미제품</p></a>
+            <a href=""><p>NEWS & VIDEO</p></a>
+            <a href=""><p>모나미 미술대회</p></a>
+            <a href=""><p>고객지원</p></a>
+            <a href=""><p>기업 구매 / 개발</p></a>
             <div id='button-box'>
               <img src={search} alt="serch" />
               <div id='hanberger'>
+                <img src={search} alt="hamberger" />
               </div>
             </div>
           </ul>

@@ -2,7 +2,7 @@ import { Box, Button, Modal, Typography } from "@mui/material";
 import LicatImage from '../assets/licat.png';
 
 
-const MotivationalModal = ({ open, handleClose}) => {
+const MotivationalModal = ({ open, handleClose }) => {
 
   return(
     <Modal open={open} onClose={handleClose}>

@@ -24,15 +24,24 @@ ul {
   padding: 0;
 }
 
-a {
-  color: #d2d2d2;
-  width: 100px;
-  height: 30px;
-  display: inline;
+#ul-box>a {
+  text-decoration: none;
+  color: #000;
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-right: 80px;
+}
+
+#right-button-box>a {
+  color: #b2b2b2;
   font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 #bar {
@@ -48,8 +57,10 @@ span {
 
 #right-button-box {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 210px;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -61,10 +72,6 @@ span {
   margin: 0;
 }
 
-#head-low-right {
-  margin: 0 0 0 20px;
-}
-
 #low-head {
   height: 89px;
   width: 100%;
@@ -73,13 +80,12 @@ span {
 }
 
 #top-box {
-  width: 80%;
+  width: 70%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-width: 1400px;
-  background-color: aqua;
 }
 
 #low-box{
@@ -96,10 +102,8 @@ span {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
   height: 100%;
-  width: 100%;
-  margin-left: 40px;
+  width: 80.5%;
 }
 
 #ul-box>p #ul-box>strong {
@@ -120,14 +124,15 @@ span {
 
 #button-box>span {
   background-color: black;
-  
 }
 
 select {
   margin-left: 10px;
-  width: 70px;
-  border: none;
-  border-radius: 5px;
+  width: 80px;
+  height: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  
 }
 
 select>option {
