@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { getCars, deleteCar } from "../api/carapi";
 import { DataGrid, GridCellParams, GridColDef } from "@mui/x-data-grid";
+import { Snackbar } from "@mui/material";
+import AddCar from "./AddCar";
 
 function Carlist() {
+  const [ open, setOpen ] = useState(false);
   const queryClient = useQueryClient();
   const { data, error, isSuccess } = useQuery({
     queryKey: ["cars"],
@@ -34,7 +38,11 @@ function Carlist() {
       disableColumnMenu: true,
       renderCell: (params: GridCellParams) =>
         <button
-          onClick={() => mutate(params.row._links.car.href)}  
+          onClick={() => {
+            if (window.confirm(`${params.row.brand}의 ${params.row.model}을 삭제하시겠습니까?`)) {
+              mutate(params.row._links.car.href)
+            }
+          }}  
         >
           삭제
         </button>
@@ -51,12 +59,22 @@ function Carlist() {
   }
   else {
     return(
-      <DataGrid
-        rows={data}
-        columns={columns}
-        getRowId={row => row._links.self.href}
-        // disableRowSelectionOnClick={true}
-      />
+      <>
+        <AddCar />
+        <DataGrid
+          rows={data}
+          columns={columns}
+          getRowId={row => row._links.self.href}
+          // disableRowSelectionOnClick={true}
+          />
+        
+        <Snackbar
+          open={open}
+          autoHideDuration={2000}
+          onClose={() => setOpen(false)}
+          message="자동차가 삭제되었습니다."
+          />
+        </>
     );
   }
 }

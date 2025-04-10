@@ -1,22 +1,25 @@
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './css/header.css'
 import Logo from '../assets/logo.png'
 import bar from '../assets/tm_bar.gif'
 import search from '../assets/btn_search.gif'
 
 export default function HEADER() {
+  const [ lang, setLang ] = useState(false);
 
   return(
     <div id="container">
       <div id='top-head'>
         <div id='top-box'>
-          <select>
-            <option>
-              kor
-            </option>
-            <option>
-              <a href="/en" id="Lang">eng</a>
-            </option>
-          </select>
+          <div>
+            {!lang ? <div id='lanbox'>
+              <button onClick={() => setLang(true)}>KOR</button>
+            </div> : <div id='Llanbox'>
+              <button onClick={() => setLang(false)}>KOR</button>
+              <button onClick={() => setLang(false)}>ENG</button>
+            </div> }
+          </div>
           <img src="" alt="" id="SImg"/>
           <img src="" alt="" id="SImg"/>
           <img src="" alt="" id="SImg"/>
