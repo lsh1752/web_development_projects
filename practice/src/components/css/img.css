@@ -1,0 +1,32 @@
+#img1 {
+  width: 392px;
+  height: 205px;
+  margin: 5px 11px 11px 0;
+}
+
+#img2 {
+  width: 786px;
+  height: 360px;
+  margin: -2px 0 11px 11px;
+}
+
+#img3 {
+  width: 392px;
+  height: 292px;
+  margin: 11px 11px 11px 0;
+}
+#img4 {
+  width: 450px;
+  height: 439px;
+  margin: 11px;
+}
+#img5 {
+  width: 314px;
+  height: 292px;
+  margin: 11px 0 0 11px;
+}
+
+.content-img {
+  overflow: hidden;
+  border-radius: 20px;
+}

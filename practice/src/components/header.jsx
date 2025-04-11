@@ -1,25 +1,17 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import './css/header.css'
 import Logo from '../assets/logo.png'
 import bar from '../assets/tm_bar.gif'
 import search from '../assets/btn_search.gif'
+import LANG from './lang.jsx'
 
 export default function HEADER() {
-  const [ lang, setLang ] = useState(false);
 
   return(
     <div id="container">
       <div id='top-head'>
         <div id='top-box'>
-          <div>
-            {!lang ? <div id='lanbox'>
-              <button onClick={() => setLang(true)}>KOR</button>
-            </div> : <div id='Llanbox'>
-              <button onClick={() => setLang(false)}>KOR</button>
-              <button onClick={() => setLang(false)}>ENG</button>
-            </div> }
-          </div>
+          <LANG />
           <img src="" alt="" id="SImg"/>
           <img src="" alt="" id="SImg"/>
           <img src="" alt="" id="SImg"/>
@@ -32,7 +24,7 @@ export default function HEADER() {
           </div>
         </div>
       </div>
-        <img src={bar} alt="" width="100%" height="0.1px"/>
+        <img id='midbar' src={bar} alt="" width="100%" height="0.08px"/>
       <div id='low-head'>
         <div id='low-box'>
           <img src={Logo} alt="LOGO" height="88px"/>
@@ -52,6 +44,7 @@ export default function HEADER() {
           </ul>
         </div>
       </div>
+      <img id='midbar' src={bar} alt="" width="100%" height="0.1px"/>
     </div>
   );
 }

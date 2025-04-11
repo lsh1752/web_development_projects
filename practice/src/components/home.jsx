@@ -1,4 +1,5 @@
 import "./css/home.css"
+import "./css/img.css"
 import img1 from "../assets/monami_content1.jpg"
 import img2 from "../assets/monami_content2.jpg"
 import img3 from "../assets/monami_content3.jpg"
@@ -27,15 +28,18 @@ export default function home() {
       <div id="contents-container">
         <div id="contents">
           <div id="text-area"> 
-          <h2>NEW <br /> ARRIVALS</h2>
+            <div id="text-box">
+              <h2>NEW</h2>
+              <h2>ARRIVALS</h2>
+            </div>
           <span></span>
           <p>가장 먼저 만나는 설레는 기다림</p>
-            <div id="img1"><img src={img1} alt="" /></div>
+            <div className="content-img" id="img1"><img src={img1} alt="" /></div>
           </div>
-        <div id="img2"><img src={img2} alt="" /></div>
-        <div id="img3"><img src={img3} alt="" /></div>
-        <div id="img4"><img src={img4} alt="" /></div>
-        <div id="img5"><img src={img5} alt="" /></div>
+            <div className="content-img" id="img2"><img src={img2} alt="" /></div>
+            <div className="content-img" id="img3"><img src={img3} alt="" /></div>
+            <div className="content-img" id="img4"><img src={img4} alt="" /></div>
+            <div className="content-img" id="img5"><img src={img5} alt="" /></div>
         </div>
       </div>
     </div>
