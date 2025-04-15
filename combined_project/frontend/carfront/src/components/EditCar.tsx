@@ -1,9 +1,13 @@
 import { useState } from "react"
 import { CarEntry, CarResponse } from "../types"
-import { Dialog, DialogTitle, DialogActions } from "@mui/material";
+import { Dialog, DialogTitle, DialogActions, Button } from "@mui/material";
 import CarDialogContent from "./CarDialogContent";
 import { updateCar } from "../api/carapi";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import IconButton from "@mui/material/IconButton";
+import EditIcon from "@mui/icons-material/Edit";
+import {Tooltip} from "@mui/material";
+// import {Tooltim} from "@mui/material"; 도 가능
 
 
 type FormProps = {
@@ -67,15 +71,18 @@ function EditCar({ cardata } : FormProps ) {
 
   return(
     <>
-      <button onClick={handleClickOpen}>
-        수정
-      </button>
+      <Tooltip title= "Edit car">
+        <IconButton aria-label="edit" size="small"
+          onClick={handleClickOpen}>
+          <EditIcon fontSize="small"></EditIcon>
+        </IconButton>
+      </Tooltip>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Edit car</DialogTitle>
         <CarDialogContent car={car} handleChange={handleChange} />
         <DialogActions>
-          <button onClick={handleClose}>취소</button>
-          <button onClick={handleSave}>저장</button>
+          <Button onClick={handleClose}>취소</Button>
+          <Button onClick={handleSave}>저장</Button>
         </DialogActions>
       </Dialog>
     </>

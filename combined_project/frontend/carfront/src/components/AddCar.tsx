@@ -2,9 +2,12 @@ import { useState } from "react";
 import { Dialog } from "@mui/material";
 import { DialogActions} from "@mui/material"
 import {DialogTitle} from "@mui/material";
+// import Button from "@mui/material";
+import { Button } from "@mui/material";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { addCar } from "../api/carapi";
 import CarDialogContent from "./CarDialogContent";
+import EditCar from "./EditCar";
 
 function AddCar() {
   const [ open, setOpen ] = useState(false);
@@ -51,13 +54,13 @@ function AddCar() {
 
   return(
     <>
-      <button onClick={handleClickOpen}> New 차량 추가 </button>
+      <Button onClick={handleClickOpen}> New 차량 추가 </Button>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>New Car</DialogTitle>
           <CarDialogContent car={car} handleChange={handleChange}/>
         <DialogActions>
-          <button onClick={handleClose}>취소</button>
-          <button onClick={handleSave}>저장</button>
+          <Button onClick={handleClose}>취소</Button>
+          <Button onClick={handleSave}>저장</Button>
         </DialogActions>
       </Dialog>
     </>

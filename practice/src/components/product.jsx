@@ -1,4 +1,5 @@
 import "./css/product.css"
+import DraggableImageGallery from "./DraggableImageGallery";
 
 export default function product() {
 
@@ -16,6 +17,7 @@ export default function product() {
         <div className="tabs">마카·컬러링</div>
         <div className="tabs">노트·사무용품</div>
       </div>
+      <DraggableImageGallery />
     </div>
   );
 }
