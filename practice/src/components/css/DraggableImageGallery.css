@@ -1,0 +1,84 @@
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE, Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
+}
+
+#Drag-img {
+  width: 266px;
+  height: 390px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#Drag-title {
+  color: #bbb;
+  font-size: 12px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+#Drag-content {
+  color: black;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+#Drag-text-div {
+  background-color: white;
+  height: 115px;
+  padding: 33px 0 0 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#Drag-img,
+#Drag-title,
+#Drag-content,
+#Drag-text-div {
+  user-select: none;
+}
+
+#span-div {
+  display: flex;
+  height: 180px;
+  width: 100%;
+}
+
+#dotted-span {
+  margin-top: 60px;
+  width: 100%;
+  height: 0.1px;
+  border-top: none;
+  border-bottom: 1px dotted #ccc;
+}
+
+#cursur {
+  margin: 41px 40px 0 ;
+  width: 21px;
+  height: 27px;
+}
+
+#left, #right {
+  margin-top: 55px;
+  width: 11px;
+  height: 11px;
+}
+
+#Drag-under-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Drag-under-text>p {
+  color: #555;
+  font-size: 11px;
+  font-weight: 500;
+}
