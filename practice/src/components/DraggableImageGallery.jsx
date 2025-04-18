@@ -107,18 +107,18 @@ const DragScrollGallery = () => {
       </div>
     ))}
   </div>
-  <div id="span-div">
-    <span id="dotted-span"></span>
-    <img src={left} alt="" id="left"/>
-    <span id="dotted-span"></span>
-    <img src={cursur} alt="cursur-img" id="cursur"/>
-    <span id="dotted-span"></span>
-    <img src={right} alt="" id="right"/>
-    <span id="dotted-span"></span>
-  </div>
-  <div id="Drag-under-text">
-    <p>DRAG & SCROLL</p>
-  </div>
+    <div id="span-div">
+      <span id="dotted-span"></span>
+      <img src={left} alt="" id="left"/>
+      <span id="dotted-span"></span>
+      <img src={cursur} alt="cursur-img" id="cursur"/>
+      <span id="dotted-span"></span>
+      <img src={right} alt="" id="right"/>
+      <span id="dotted-span"></span>
+    </div>
+    <div id="Drag-under-text">
+      <p>DRAG & SCROLL</p>
+    </div>
 </div>
   );
 };
