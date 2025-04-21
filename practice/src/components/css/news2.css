@@ -1,0 +1,60 @@
+#news-box2 {
+  margin-top: -58px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#news-title {
+  margin: 20px 0 10px 0;
+}
+
+#news-span {
+  background-color: #cc0000;
+  border: none;
+  width: 25px;
+  height: 4px;
+}
+
+#news-text {
+  margin-top: 10px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#news-text>p {
+  margin: 2px 0 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+#news2-img {
+  width: 54px;
+  height: 49px;
+  margin-bottom: 5px;
+}
+
+#news2-container {
+  background-image: url("../../assets/inquiry_bg.jpg");
+  width: 350px;
+  height: 355px;
+  display: flex;
+  align-items: center;
+}
+
+#news3-container {
+  background-image: url("../../assets/shop_bg.png");
+  width: 350px;
+  height: 355px;
+  display: flex;
+  align-items: center;
+}
+
+#news3-img {
+  width: 60px;
+  height: 50px;
+}

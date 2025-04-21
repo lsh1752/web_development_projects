@@ -11,3 +11,16 @@
   width: 1400px;
   height: 100%;
 }
+
+#foot-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+#foot-top-right>span {
+  border: none;
+  background-color: white;
+  width: 1px;
+  height: 20px;
+}
